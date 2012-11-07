@@ -61,11 +61,12 @@
         </Items>
     </asp:Menu></div></div>
     <div>
-        <asp:ContentPlaceHolder id="MainContent" runat="server">
-        
-        </asp:ContentPlaceHolder>
+        <asp:ContentPlaceHolder id="MainContent" runat="server"></asp:ContentPlaceHolder>
     </div>
     </div>
+    <asp:ContentPlaceHolder ID="footer" runat="server">
+        <blockquote>HELLO MY footer!</blockquote>
+    </asp:ContentPlaceHolder>
     </form>
 </body>
 </html>

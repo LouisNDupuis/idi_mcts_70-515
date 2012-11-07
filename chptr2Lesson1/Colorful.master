@@ -66,6 +66,9 @@
         </asp:ContentPlaceHolder>
     </div>
     </div>
+    <asp:ContentPlaceHolder ID="footer" runat="server">
+        <blockquote>HELLO MY footer!</blockquote>
+    </asp:ContentPlaceHolder>
     </form>
 </body>
 </html>

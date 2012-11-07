@@ -17,4 +17,5 @@ Color Scheme:
     <asp:Button ID="OKButton" runat="server" Text="OK" 
     onclick="OKButton_Click" />
 </asp:Content>
+<asp:Content ID="footers" runat="server" ContentPlaceHolderID="footer"></asp:Content>
 
