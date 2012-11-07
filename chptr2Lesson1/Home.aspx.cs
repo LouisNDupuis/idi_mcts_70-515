@@ -11,6 +11,12 @@ public partial class Home : System.Web.UI.Page
     {
     }
 
+    protected void Page_PreInit(object sender, EventArgs e) {
+        if (Session["Template"] != null) {
+            MasterPageFile = String.Format("~/{0}.master", (String)Session["Template"]);
+        }
+    }
+
     protected void OKButton_Click(object sender, EventArgs e)
     {
         if (NameTextBox.Text != String.Empty) {
@@ -18,5 +24,10 @@ public partial class Home : System.Web.UI.Page
             Label welcome = (Label)Master.FindControl("GreetingLabel");
             welcome.Text = String.Format("Welcome, {0}!", Session["UserName"]);
         }
+    }
+    protected void SitePrefDropDownList_SelectedIndexChanged(object sender, EventArgs e)
+    {
+        Session["Template"] = SitePrefDropDownList.SelectedValue;
+        Server.Transfer(Request.Path);
     }
 }

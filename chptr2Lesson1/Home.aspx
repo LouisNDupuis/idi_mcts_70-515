@@ -7,7 +7,8 @@
     <asp:TextBox ID="NameTextBox" runat="server"></asp:TextBox><br />
 <br />
 Color Scheme:
-    <asp:DropDownList ID="SitePrefDropDownList" runat="server">
+    <asp:DropDownList ID="SitePrefDropDownList" runat="server" 
+        onselectedindexchanged="SitePrefDropDownList_SelectedIndexChanged">
         <asp:ListItem>Professional</asp:ListItem>
         <asp:ListItem>Colorful</asp:ListItem>
     </asp:DropDownList>
