@@ -1,0 +1,71 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Professional.master.cs" Inherits="Professional" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title></title>
+    <link href="~/Styles/Colorful-Site.css" rel="stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder id="HeadContent" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .style1
+        {
+            width: 150px;
+            height: 129px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="page">
+        <div class="header">
+            <div class="title">
+    <img alt="Contoso, Inc. Logo" class="style1" 
+        src="idiidi.gif" />
+        </div>
+            <asp:Label ID="GreetingLabel" runat="server" Font-Size="XX-Large" 
+                ForeColor="Blue">Welcome to Contoso!</asp:Label>
+                <br />
+            <br />
+            <br />
+                <div class="menu">
+                <asp:Menu 
+        ID="Menu1" runat="server" BackColor="#B5C7DE" DynamicHorizontalOffset="10" 
+        Font-Names="Verdana" Font-Size="0.8em" ForeColor="#284E98" 
+        Orientation="Horizontal" StaticSubMenuIndent="10px" 
+                onmenuitemclick="Menu1_MenuItemClick">
+        <Items>
+            <asp:MenuItem Text="Products" Value="Products">
+                <asp:MenuItem Text="Cars" Value="Cars"></asp:MenuItem>
+                <asp:MenuItem Text="Software" Value="Software"></asp:MenuItem>
+                <asp:MenuItem Text="Real Estate" Value="Real Estate"></asp:MenuItem>
+                <asp:MenuItem Text="Shrubbery" Value="Shrubbery"></asp:MenuItem>
+            </asp:MenuItem>
+            <asp:MenuItem Text="Services" Value="Services">
+                <asp:MenuItem Text="Systems Archicture" Value="Systems Archicture">
+                </asp:MenuItem>
+                <asp:MenuItem Text="Landscaping" Value="Landscaping"></asp:MenuItem>
+                <asp:MenuItem Text="Medical Emergencies" Value="Medical Emergencies">
+                </asp:MenuItem>
+            </asp:MenuItem>
+            <asp:MenuItem Text="Downloads" Value="Downloads">
+                <asp:MenuItem Text="Updates" Value="Updates"></asp:MenuItem>
+                <asp:MenuItem Text="Drivers" Value="Drivers"></asp:MenuItem>
+                <asp:MenuItem Text="Trials" Value="Trials"></asp:MenuItem>
+            </asp:MenuItem>
+            <asp:MenuItem Text="About Us" Value="About Us" NavigateUrl="About.aspx">
+                <asp:MenuItem Text="Contact" Value="Contact" NavigateUrl="About.aspx"></asp:MenuItem>
+                <asp:MenuItem Text="Who We Are" Value="Who We Are" NavigateUrl="About.aspx"></asp:MenuItem>
+            </asp:MenuItem>
+        </Items>
+    </asp:Menu></div></div>
+    <div>
+        <asp:ContentPlaceHolder id="MainContent" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+    </div>
+    </form>
+</body>
+</html>
