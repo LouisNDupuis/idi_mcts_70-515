@@ -14,4 +14,9 @@
         You can also find <a href="http://go.microsoft.com/fwlink/?LinkID=152368&amp;clcid=0x409"
             title="MSDN ASP.NET Docs">documentation on ASP.NET at MSDN</a>.
     </p>
+
+    <asp:Image ID="Image1" runat="server" SkinID="SkinTheme" /><br />
+    <asp:TextBox runat="server" CssClass="TextBox"></asp:TextBox><br />
+    <asp:Button runat="server" CssClass="button" Text="Hello!" 
+        ID="SwitchThemeButton" onclick="SwitchThemeButton_Click" /><br />
 </asp:Content>

@@ -1,0 +1,3 @@
+﻿<asp:Image ImageURL="~/App_Themes/Contoso/Contoso.gif" SkinID="SkinTheme" runat="Server"/>
+<asp:TextBox runat="Server" BorderColor="Blue" BorderWidth="1px" Font-Names="Arial" Font-Size="10px" ForeColor="Brown" ></asp:TextBox>
+<asp:Button runat="Server" BorderColor="Blue" BorderWidth="1px" Font-Bold="true" BackColor="White" ForeColor="DarkBlue" />
