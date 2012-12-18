@@ -33,4 +33,9 @@ public partial class _Default : System.Web.UI.Page
         }
         Server.Transfer(Request.Path);
     }
+
+    protected void SubmitButton_Click(object sender, EventArgs e) 
+    {
+        ChosenLabel.Text = String.Format("{0} at {1}", ChoiceDropDownList.SelectedValue, DateTime.Now.TimeOfDay.ToString());
+    }
 }
