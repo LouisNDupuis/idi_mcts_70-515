@@ -99,9 +99,20 @@ public partial class _Default : System.Web.UI.Page
             }
 
             // Define the query string in the hyperlink
-            HyperLink1.NavigateUrl += "?clicks=" + queryClicks.ToString();
+            HyperLink2.NavigateUrl += "?clicks=" + queryClicks.ToString();
             Label4.Text = "Query clicks: " + queryClicks.ToString();
         }
+
+        /* lesson3:exo1 */
+        Application.Lock();
+        Application["clicks_lesson_3"] = ((int)Application["clicks_lesson_3"]) + 1;
+        Application.UnLock();
+
+        Label5.Text = string.Format("Application clicks: {0}", Application["clicks_lesson_3"].ToString());
+
+        /* lesson3:exo2 */
+        Session["session_clicks"] = (int)Session["session_clicks"] + 1;
+        Label6.Text = string.Format("Session clicks: {0}", Session["session_clicks"].ToString());
     }
 
     protected void Page_LoadComplete(object sender, EventArgs e)

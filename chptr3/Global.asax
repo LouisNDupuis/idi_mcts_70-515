@@ -5,6 +5,7 @@
     void Application_Start(object sender, EventArgs e) 
     {
         // Code that runs on application startup
+        Application["clicks_lesson_3"] = 0;
 
     }
     
@@ -23,7 +24,7 @@
     void Session_Start(object sender, EventArgs e) 
     {
         // Code that runs when a new session is started
-
+        Session["session_clicks"] = 0;
     }
 
     void Session_End(object sender, EventArgs e) 
