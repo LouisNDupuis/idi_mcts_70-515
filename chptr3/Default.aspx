@@ -27,7 +27,7 @@
         <asp:Label ID="PasswordLabel" Text="Password:" runat="server"></asp:Label>
         <asp:TextBox ID="PasswordTextBox" runat="server"></asp:TextBox>
         <br />
-        <asp:Button ID="LogonButton" Text="Login" runat="server" OnClick="LogonButton_Click" />
+        <asp:Button ID="LogonButton" Text="Login" runat="server" oncommand="LogonButton_Click" />
     </div>
     <br />
     <hr />
