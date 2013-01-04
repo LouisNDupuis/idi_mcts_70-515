@@ -1,0 +1,2 @@
+﻿<%@ Control Language="C#" AutoEventWireup="true" CodeFile="ShowNameBackwards.ascx.cs" Inherits="ShowNameBackwards" %>
+<asp:Label ID="BackwardsLabel" runat="server" Text="Enter name to see it spelled backwards"></asp:Label>
