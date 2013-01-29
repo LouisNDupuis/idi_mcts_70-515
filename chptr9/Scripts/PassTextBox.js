@@ -11,7 +11,7 @@ AjaxEnabled.PassTextBox = function (element) {
     this._strongCssClass = null;
 }
 
-// dfine class
+// define class
 AjaxEnabled.PassTextBox.prototype = {
     // initialize the UI control
     initialize: function () {

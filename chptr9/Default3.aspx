@@ -4,19 +4,18 @@
     <style type="text/css" >
         .weak  
         {
-            border: thin solid #FF0000; 
+            border: 2px solid #FF0000; 
         }
         .medium 
         { 
-            border: thin solid #FFFF00; 
+            border: 2px solid #FFFF00; 
         }
         .strong  
         {
-            border: thin solid #008000; 
+            border: 2px solid #008000; 
         }
     </style>
 
-   
 </asp:Content>
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" Runat="Server">
 

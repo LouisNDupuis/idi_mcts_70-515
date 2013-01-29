@@ -34,6 +34,8 @@
                         <asp:MenuItem NavigateUrl="~/Default.aspx" Text="Lesson 1"/>
                         <asp:MenuItem NavigateUrl="~/Default2.aspx" Text="Lesson 2 - exo 1" />
                         <asp:MenuItem NavigateUrl="~/Default3.aspx" Text="Lesson 2 - exo 2" />
+                        <asp:MenuItem NavigateUrl="~/Default4.aspx" Text="Lesson 2 - exo 3 [fonctionne pas]" />
+                        <asp:MenuItem NavigateUrl="~/Default5.aspx" Text="Lesson 3 [fonctionne pas]" />
                     </Items>
                 </asp:Menu>
             </div>
